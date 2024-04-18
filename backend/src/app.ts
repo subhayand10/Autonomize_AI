@@ -193,7 +193,9 @@ app.get("/users/sorted", async (req: Request, res: Response) => {
 
 app.listen(3000, () => {
   console.log("Server started on port 3000");
-  mongoose.connect("mongodb://localhost:27017/newDB");
+  mongoose.connect(
+    "mongodb+srv://subhayansd10:bjDiRjfr2kGtHM3r@cluster0.pg28axs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  );
 });
 
 export default app;
