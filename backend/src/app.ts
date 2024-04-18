@@ -44,6 +44,10 @@ const User = mongoose.model("User", userSchema);
 const app = express();
 app.use(express.json());
 
+app.get("/", async (req: Request, res: Response) => {
+res.send("<h1>Github API<h1>");
+});
+
 app.post("/users/:username", async (req: Request, res: Response) => {
   const { username } = req.params;
   const existingUser = await User.findOne({ login: username });
