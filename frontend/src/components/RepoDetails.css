@@ -1,0 +1,18 @@
+.repo-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.repo-details h2 {
+  margin-bottom: 20px;
+}
+
+.repo-details .description {
+  font-size: 5rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  border: 1px solid#007bff;
+  border-radius: 10px;
+}
